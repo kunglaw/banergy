@@ -1,4 +1,5 @@
 <!-- BEGIN: Head-->
+<?php  $title = isset($title) ? $title : "untitled page" ?>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,7 +10,8 @@
     <meta name="keywords"
         content="admin template, modern admin template, dashboard template, flat admin template, responsive admin template, web app, crypto dashboard, bitcoin dashboard">
     <meta name="author" content="PIXINVENT">
-    <title> My Title | Banergy </title>
+
+    <title> {{ $title }} | Banergy </title>
     <link rel="apple-touch-icon" href="<?=url("banergy-assets/app-assets/images/ico/apple-icon-120.png")?>">
     <link rel="shortcut icon" type="image/x-icon" href="<?=url("banergy-assets/app-assets/images/ico/favicon.ico")?>">
     <link

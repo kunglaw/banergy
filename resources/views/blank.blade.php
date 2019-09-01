@@ -6,7 +6,7 @@
         <div class="content-body">
             <section class="card">
                 <div class="card-body">
-                    <h1> Content Title </h1>
+                    <h1> {{ $title }} </h1>
                 </div>
             </section>
         </div>

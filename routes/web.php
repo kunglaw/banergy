@@ -12,12 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
+});
+
+Route::get("/blank", function(){
+    $data["title"] = "Blank";
+    return view("blank",$data);
 });
 
 Route::get("/test", function(){
-    return view("testpage");
+   
+    return view("blank");
 });
+
 
 Auth::routes();
 
